@@ -1,0 +1,20 @@
+#+title: Extras configuration
+#+date: <2024-07-08 Mon>
+
+*  Fix key repeat in VSCode
+'''
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+'''
+
+* Create Emacs Client Application
+Create Emacs Deamon Scrip to launch Emacs server,Save as application and add this script to LoginItems in settings
+
+'''
+do shell script "/Applications/Emacs.app/Contents/MacOS/Emacs --daemon"
+'''
+
+Create Shell script and save as application
+
+'''
+do shell script "/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -cn"
+'''
