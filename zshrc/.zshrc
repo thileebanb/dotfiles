@@ -150,7 +150,7 @@ alias ls="eza --icons=always"
 
 alias cd="z"
 
-alias ec="emacsclient -cn -a=emacs"
+alias ec="emacsclient -cn -a=emacs "
 
 alias vi="nvim"
 
