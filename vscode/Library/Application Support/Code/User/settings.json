@@ -1,0 +1,79 @@
+{
+  // Workbench
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dracula Theme"
+  "workbench.startupEditor": "none",
+
+  // Window
+  "window.confirmBeforeClose": "keyboardOnly",
+  "window.newWindowDimensions": "maximized",
+
+  // Editor
+  "editor.fontSize": 14,
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "MesloLGS Nerd Font",
+  "editor.formatOnSave": true,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.centerLayout": false,
+
+  // Terminal
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "terminal.integrated.fontSize": 14,
+
+  // Git
+  "git.autofetch": true,
+
+  // Vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["leader", "f", "s"],
+      "commands": ["workbench.action.files.save"]
+    }
+  ],
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+
+  // Formatter
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // Dart
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "dart.flutterSdkPath": "/Users/thileeban-616/Development/flutter"
+}

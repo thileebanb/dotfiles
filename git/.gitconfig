@@ -1,0 +1,26 @@
+[user]
+  name = Thileeban Balasundaram
+	email = thileeban.b@marketsimplified.com
+
+[core]
+	autocrlf = input
+  pager = delta
+  editor = nvim
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  side-by-side = true
+  line-numbers = true
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+	tool = code
+
+[difftool "code"]
+  cmd = "code --wait --diff $LOCAL $REMOTE"
