@@ -1,7 +1,7 @@
 {
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Dracula Theme"
+  "workbench.colorTheme": "Dracula Theme",
   "workbench.startupEditor": "none",
 
   // Window
