@@ -1,3 +1,10 @@
+" Set color scheme
+if v:version < 802
+    packadd! dracula
+endif
+syntax enable
+colorscheme dracula
+
 " Set Fuzzy finder
 set rtp+=/opt/homebrew/opt/fzf
 
@@ -6,9 +13,6 @@ set number
 
 " Enable syntax highlighting
 syntax on
-
-" Set the color scheme (choose one you like)
-colorscheme default
 
 " Use spaces instead of tabs
 set expandtab
