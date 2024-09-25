@@ -13,12 +13,17 @@
   "editor.lineNumbers": "relative",
   "editor.fontFamily": "MesloLGS Nerd Font",
   "editor.formatOnSave": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.minimap.enabled": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.centerLayout": false,
 
   // Terminal
   "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.external.osxExec": "Alacritty.app",
 
   // Git
   "git.autofetch": true,
@@ -57,10 +62,18 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.rulers": [80],
+    "editor.formatOnSave": true
+  },
+
+  // Linter
+  "pylint.lintOnChange": true,
 
   // Dart
-  "dart.debugExternalPackageLibraries": false,
-  "dart.debugSdkLibraries": false,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": true,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -75,5 +88,15 @@
       "source.organizeImports": "explicit"
     }
   },
-  "dart.flutterSdkPath": "/Users/thileeban-616/Development/flutter"
+  "dart.flutterSdkPath": "/Users/thileeban-616/Development/flutter",
+
+  // Code Runner
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "python": "python3",
+    "dart": "dart"
+  },
+  "code-runner.showExecutionMessage": false,
+  "code-runner.clearPreviousOutput": true
 }
