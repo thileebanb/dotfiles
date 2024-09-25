@@ -156,6 +156,8 @@ alias vi="nvim"
 
 alias lg="lazygit"
 
+alias py="python3"
+
 # Yazi
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
@@ -175,3 +177,10 @@ export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f
 
 # Set VIM Key Bindings in Terminal
 # set -o vi
+
+# Flutter pub global package
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# Set default terminal
+set -g default-terminal "alacritty"
+
