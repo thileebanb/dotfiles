@@ -62,14 +62,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.rulers": [80],
-    "editor.formatOnSave": true
-  },
-
-  // Linter
-  "pylint.lintOnChange": true,
 
   // Dart
   "dart.debugExternalPackageLibraries": true,
@@ -98,5 +90,19 @@
     "dart": "dart"
   },
   "code-runner.showExecutionMessage": false,
-  "code-runner.clearPreviousOutput": true
+  "code-runner.clearPreviousOutput": true,
+
+  // Python
+  "python.analysis.autoImportCompletions": true,
+  "pylint.lintOnChange": true,
+  "pylint.args": [
+    "--disable=missing-function-docstring",
+    "--disable=missing-module-docstring",
+    "--disable=missing-class-docstring"
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.rulers": [80],
+    "editor.formatOnSave": true
+  }
 }
