@@ -5,7 +5,7 @@
 [core]
 	autocrlf = input
   pager = delta
-  editor = nvim
+  editor = code --wait
 
 [interactive]
   diffFilter = delta --color-only
