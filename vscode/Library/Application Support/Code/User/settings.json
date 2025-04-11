@@ -80,7 +80,13 @@
       "source.organizeImports": "explicit"
     }
   },
-  "dart.flutterSdkPath": "/Users/thileeban-616/Development/flutter",
+  "dart.flutterSdkPath": "/Users/thileeban-616/fvm/default",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/.fvm": true
+  },
 
   // Code Runner
   "code-runner.executorMap": {
@@ -104,5 +110,9 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.rulers": [80],
     "editor.formatOnSave": true
+  },
+  "cSpell.userWords": ["intraday", "Stoploss", "Watchlist"],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

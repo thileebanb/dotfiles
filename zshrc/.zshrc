@@ -111,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set Flutter PATH
-export PATH="$PATH:$HOME/Development/flutter/bin"
+export PATH="$PATH:$HOME/fvm/default/bin"
 
 export PATH="$PATH:$HOME/.config/emacs/bin"
 
@@ -158,6 +158,10 @@ alias lg="lazygit"
 
 alias py="python3"
 
+alias f="fvm flutter"
+
+alias d="fvm dart"
+
 # Yazi
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
@@ -184,3 +188,14 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 # Set default terminal
 set -g default-terminal "alacritty"
 
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/thileeban-616/.dart-cli-completion/zsh-config.zsh ]] && . /Users/thileeban-616/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/thileeban-616/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
