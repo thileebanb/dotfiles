@@ -1,0 +1,14 @@
+" Set relative number
+set relativenumber
+
+" Set external source to copy and paste
+set clipboard+=unnamed
+
+" Set the leader key to space
+let mapleader = " "
+
+" Map <leader>fs to save the file (write)
+nmap <leader>fs :w<CR>
+
+" Map <leader>qf to quit the file (close buffer)
+nmap <leader>qf :q<CR>
